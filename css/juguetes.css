@@ -1,0 +1,98 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-image: url("../img/ft.jpg");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+
+.page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.page-logo {
+    width: 200px;
+}
+.logo{
+    width: 400px;
+    height: 150px;
+}
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+body>img {
+    margin: 0 10px;
+}
+
+#catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.singleFilm {
+    display: flex;
+    flex-direction: column;
+}
+
+#catalogo img {
+    margin: 10px;
+    width: 182px;
+    height: 268px;
+}
+
+.singleFilm span {
+    color: white;
+    text-transform: capitalize;
+}
+
+.operacao {
+    color: white;
+    position: relative;
+}
+
+.close {
+    cursor: pointer;
+    top: 45%;
+    padding: 3px 9px;
+    margin-left: 5px;
+    transform: translate(0%, -50%);
+}
+
+.close:hover {
+    background: #bbb;
+}
+
+.btnGroup {
+    margin: 15px;
+}
+
+.btnGroup button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7a0d12;
+    color: #fff;
+}
+
+.btnGroup button:hover {
+    background-color: #da1e26;
+    cursor: pointer;
+}
