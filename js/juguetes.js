@@ -15,16 +15,8 @@ let filmes = [
     "Bomba de Vacio <hr>Incrementa <br>el tamaño del pene<hr>$19.990",
     "Kit Bondage Completo <hr> 10 articulos Ecocuero <br> color negro o rojo <hr>$33.990 ",
     "Esposas Bondage <hr> Ecocuero <br> forradas ajustables <hr>$5.990",
-    "Latigo Bondage <hr> Ecocuero <br>Color rosa <hr>$5.990",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
-
-
-
+    "Latigo Bondage <hr> Ecocuero <br>Color rosa <hr>$5.990"
+    
 ];
 
 let listaImgFilmes = [
@@ -41,21 +33,14 @@ let listaImgFilmes = [
     "https://jenylove.cl/wp-content/uploads/2019/08/Bomba-De-vacio.png",
     "https://jenylove.cl/wp-content/uploads/2019/02/kit-de-bondage.jpg",
     "https://jenylove.cl/wp-content/uploads/2018/10/esposas-1.jpg",
-    "https://s.cornershopapp.com/product-images/5636576.jpg?versionId=Ef3XIBiwhuIAg6lilrtxkvr9Dhhl4TuO",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
-
+    "https://s.cornershopapp.com/product-images/5636576.jpg?versionId=Ef3XIBiwhuIAg6lilrtxkvr9Dhhl4TuO"
 
 ];
 
 function exibeFilmes() {
     for (let i = 0; i < filmes.length; i++) {
         catalogo.innerHTML += `
-        <div class='singleFilm'>
+        <div class='singleFilm card'> <!-- Agregado 'card' como clase -->
         <img src="${listaImgFilmes[i]}">
         <span class='nomeFilme'>${filmes[i]}</span>
         </div>
@@ -64,56 +49,3 @@ function exibeFilmes() {
 }
 
 exibeFilmes();
-
-function addFilme() {
-    let newFilme = prompt("Digite o nome de um filme").toLowerCase();
-    let newImgFilme = prompt("URL da capa do filme:");
-
-    if (newFilme == "" || newImgFilme == "") {
-        alert("Um dos campos está vázio!");
-    } else if (newFilme == null || newImgFilme == null) {
-        msg.innerHTML =
-            'Operação Cancelada<span onclick="fecharMensagem()" class="close" title="Fechar">x</span>';
-        mostrarMensagem();
-    } else {
-        filmes.push(newFilme);
-        listaImgFilmes.push(newImgFilme);
-        catalogo.innerHTML += `
-        <div class='singleFilm'>
-        <img onclick="trailer()" src="${listaImgFilmes[listaImgFilmes.length - 1]
-            }">
-        <span class='nomeFilme'>${filmes[filmes.length - 1]}</span>
-        </div>
-        `;
-        msg.innerHTML =
-            'Filme Adicionado com Sucesso<span onclick="fecharMensagem()" class="close" title="Fechar">x</span>';
-        mostrarMensagem();
-    }
-}
-
-function removerFilme() {
-    let deleteFilme = prompt("Qual filme deseja remover?");
-    deleteFilme = deleteFilme.toLowerCase();
-
-    if (filmes.indexOf(deleteFilme) == -1) {
-        msg.innerHTML =
-            'Filme Não Encontrado<span onclick="fecharMensagem()" class="close" title="Fechar">x</span>';
-        mostrarMensagem();
-    } else {
-        deleteIndice = filmes.indexOf(deleteFilme);
-        filmes.splice(deleteIndice, 1);
-        listaImgFilmes.splice(deleteIndice, 1);
-        catalogo.innerHTML = "";
-        exibeFilmes();
-        msg.innerHTML =
-            'Filme Removido com Sucesso<span onclick="fecharMensagem()" class="close" title="Fechar">x</span>';
-        mostrarMensagem();
-    }
-}
-function fecharMensagem() {
-    document.getElementById("msg").style.display = "none";
-}
-
-function mostrarMensagem() {
-    document.getElementById("msg").style.display = "block";
-}

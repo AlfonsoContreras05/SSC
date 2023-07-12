@@ -26,10 +26,12 @@ body {
 .page-logo {
     width: 200px;
 }
-.logo{
+
+.logo {
     width: 400px;
     height: 150px;
 }
+
 .alura-logo {
     width: 40px;
     position: absolute;
@@ -37,7 +39,7 @@ body {
     right: 10px;
 }
 
-body>img {
+body > img {
     margin: 0 10px;
 }
 
@@ -45,22 +47,36 @@ body>img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
 }
 
 .singleFilm {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #191c29;
+    width: 182px;
+    height: 268px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
 }
 
 #catalogo img {
-    margin: 10px;
-    width: 182px;
-    height: 268px;
+    margin-bottom: 10px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .singleFilm span {
     color: white;
     text-transform: capitalize;
+    font-size: 1em;
+    text-align: center;
 }
 
 .operacao {
