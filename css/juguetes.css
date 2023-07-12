@@ -1,16 +1,76 @@
 body {
     font-family: "Roboto Mono", monospace;
     text-align: center;
-    background-image: url("../img/ft.jpg");
+    background: linear-gradient(135deg,#ff9a00, #ff417e, #9d26b0);
     background-color: #000000;
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
 }
 
-.container {
+h1.page-title,
+.logo {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .nav-link.show {
+    opacity: 1;
+  }/* Estilos para el navbar */
+  .container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .lead {
+    font-size: 1.5rem;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 95%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+  
+  .navbar ul li a {
     text-align: center;
-    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+  }
+  
+  .navbar ul li a:hover {
+    color: skyblue;
+  }
+  
+.imgx{
+    margin: 55px auto ;
+    width: 90%;
+    height: 200px;
 }
 
 .page-title {
@@ -62,6 +122,8 @@ body > img {
     border-radius: 6px;
     cursor: pointer;
     position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
 }
 
 #catalogo img {
