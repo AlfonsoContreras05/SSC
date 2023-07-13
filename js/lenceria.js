@@ -1,6 +1,6 @@
 const catalogo = document.querySelector("#catalogo");
 
-fetch("/js/catalogos/juguetes.json")
+fetch("/js/catalogos/lenceria.json")
   .then(response => response.json())
   .then(data => exibeProductos(data.productos))
   .catch(error => console.error("Error al cargar el catálogo:", error));
