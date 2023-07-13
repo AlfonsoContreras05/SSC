@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        #container {
+            position: relative;
+        }
+        
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+            width: 60px;
+            height: 60px;
+            background-color: green;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .whatsapp-button:hover {
+            background-color: darkgreen;
+        }
+        
+        .whatsapp-button img {
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+    <title>SexShop</title>
+</head>
+<body>
+    <div id="container">
+        <a href="vistas/juguetes.html">Juguetes</a>
+        <a href="vistas/aceylub.html">Aceites<br>Lubricantes<br>Potenciadores</a>
+        <a href="vistas/lenceria.html">Lenceria</a>
+        <a href="https://wa.me/56950038420" target="_blank" rel="noopener noreferrer" class="whatsapp-button">
+            <img src="img/whatsapp.png" alt="WhatsApp">
+        </a>
+    </div>
+</body>
+</html>
