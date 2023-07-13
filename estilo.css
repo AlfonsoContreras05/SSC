@@ -447,7 +447,7 @@ footer h3 {
   text-transform: uppercase;
 }
 .footer-container {
-  display: grid;
+  display: list-item;
   grid-template-columns: 1fr 2fr;
   grid-auto-rows: auto;
   grid-template-areas:
@@ -518,6 +518,8 @@ footer h3 {
 }
 .txt-fachada {
   grid-area: txt-fachada;
+  margin: auto;
+  align-items: center;
   text-align: center;
 }
 
