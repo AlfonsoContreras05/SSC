@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Gerentes</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-right mb-1" style="margin-top: 15px">
+        <a href="{% url 'loginadmin' %}" class="btn btn-danger">Cerrar sesión</a>
+      </div>
+      <h1>Ingreso de Gerentes</h1>
+      <form action="{% url 'gerente' %}" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="rut">RUT:</label>
+          <input
+            type="text"
+            class="form-control"
+            name="rut"
+            id="rut"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            class="form-control"
+            name="nombre"
+            id="nombre"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input
+            type="tel"
+            class="form-control"
+            name="telefono"
+            id="telefono"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="correo">Correo electrónico:</label>
+          <input
+            type="email"
+            class="form-control"
+            name="correo"
+            id="correo"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="contrasena">Contraseña:</label>
+          <input
+            type="password"
+            class="form-control"
+            name="contrasena"
+            id="contrasena"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-pulse">Guardar</button>
+      </form>
+      <hr />
+
+      <h2>Lista de Gerentes</h2>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>RUT</th>
+            <th>Teléfono</th>
+            <th>Correo electrónico</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for gerente in gerentes %}
+          <tr>
+            <td>{{ gerente.nombre_completo }}</td>
+            <td>{{ gerente.rut }}</td>
+            <td>{{ gerente.telefono }}</td>
+            <td>{{ gerente.email }}</td>
+            <td>
+              {% comment %} <button class="btn btn-secondary">Editar</button> {% endcomment %}
+              <a href="{% url 'editar_gerente' gerente.id %}" class="btn btn-secondary">Editar</a>
+
+              {% comment %} <button class="btn btn-danger">Eliminar</button> {% endcomment %}
+              <form action="{% url 'eliminar_gerente' gerente.id %}" method="POST" style="display: inline;">
+                {% csrf_token %}
+                <input type="hidden" name="gerente_id" value="{{ gerente.id }}">
+                <button type="submit" class="btn btn-danger" onclick="return confirm('¿Estás seguro de que deseas eliminar este gerente?')">Eliminar</button>
+              </form>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      {% if gerente%}
+      <h3 class="text-center text-red" style="color: red">
+        Aun no tiene Gerentes...!!!
+      </h3>
+      {% endif %}
+    </div>
+  </body>
+</html>
