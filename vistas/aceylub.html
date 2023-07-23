@@ -1,28 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/aceylub.css">
-    <title>Aceites y Lubricantes</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="/css/aceylub.css">
+
+   <!-- custom js file link  -->
+   <script src="/js/aceylub.js" defer></script>
+
 </head>
 <body>
 
-    <div class="container">
-        <a href="../index.html">Pantalla Principal</a>
-        <h1 class="page-title">SexShop</h1>
-        <img src="../img/13507.jpg" class="logo"alt="">
+    <div class="navbar">
+        <h3 class="title"></h3>
+        
+        <div class="filter-container">
+           <input type="text" id="filter-input" placeholder="Buscar juguetes...">
+
+        </div>
+        <button id="back-button" class="back-button">
+           <i class="fas fa-arrow-left"></i> Regresar
+        </button>
+     </div>
+
+   <div class="container">
+
+
+   
+      <div class="products-container">
+         <!-- El catálogo de productos se generará dinámicamente aquí -->
+      </div>
+
+            <!-- Elemento para mostrar el mensaje de no coincidencias -->
+   
+   </div>
+
+   <div class="products-preview">
+      <!-- El código del popup de detalle de productos se generará dinámicamente aquí -->
+   </div>
+
+    <div class="preview" data-target="p-1">
+        <i class="fas fa-times"></i>
+        <img src="" alt="">
+        <h3></h3>
+        <p></p>
+        <div class="price"></div>
+        <!-- Nuevo elemento para mostrar la categoría -->
+        <div class="category"></div>
     </div>
-    
-    <div id="catalogo"></div>
-
-    <script src="js/script.js"></script>
 </body>
-
-</html>
-<script src="../js/aceylub.js"></script>
-</body>
-
-
 </html>
