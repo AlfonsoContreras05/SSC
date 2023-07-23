@@ -62,10 +62,45 @@ body{
    transform: scale(.9);
 }
 
-.container .products-container .product h3{
-   padding:.5rem 0;
+.container .products-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 2rem;
+   justify-items: center; /* Centrar los elementos horizontalmente */
+   align-items: center; /* Centrar los elementos verticalmente */
+}
+
+.container .products-container .product {
+   /* Estilos adicionales para cada producto */
+   text-align: center;
+   background: #fff;
+   padding: 2rem;
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+   outline: 0.1rem solid #ccc;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+   transition: transform 0.3s ease;
+   width: 100%; /* Ancho del producto al 100% del contenedor */
+   display: flex; /* Agregamos un flexbox para alinear verticalmente el contenido */
+   flex-direction: column; /* Alineamos el contenido en columnas */
+   justify-content: space-between; /* Distribuimos el contenido uniformemente */
+}
+
+.container .products-container .product:hover {
+   outline: 0.2rem solid #222;
+   outline-offset: 0;
+   transform: scale(1); /* Efecto de escala al pasar el mouse */
+}
+
+.container .products-container .product img {
+   height: 25rem;
+   max-width: 100%;
+}
+
+.container .products-container .product h3 {
+   padding: 0.5rem 0;
    font-size: 2rem;
-   color:#444;
+   color: #444;
 }
 
 .container .products-container .product:hover h3{
@@ -77,7 +112,59 @@ body{
    color:#444;
 }
 
+/* Estilos para el navbar */
+/* Estilos para el navbar */
+.navbar {
+   background-color: #333; /* Color de fondo del navbar */
+   color: #fff; /* Color del texto del navbar */
+   padding: 10px; /* Espaciado interno del navbar */
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
 
+/* Estilos para el filtro */
+.filter-container {
+   display: flex;
+   align-items: center;
+}
+.input-icon {
+   position: relative;
+}
+#filter-input {
+   background-color: #fff;
+   border: 2px solid #333;
+   padding: 6px 10px;
+   font-size: 14px;
+   border-radius: 5px;
+   width: 200px;
+   /* Estilos para el icono dentro del campo */
+   padding-right: 30px; /* Espacio a la derecha para el icono */
+}
+
+/* Estilos para el botón de regreso */
+.back-button {
+   background-color: #fff; /* Color de fondo del botón */
+   color: #333; /* Color del texto */
+   border: 2px solid #333; /* Borde del botón */
+   padding: 8px 16px; /* Espaciado interno (vertical horizontal) */
+   font-size: 16px; /* Tamaño del texto */
+   cursor: pointer; /* Cambiar el cursor al pasar por encima */
+   transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.back-button:hover {
+   background-color: #333; /* Cambiar el color de fondo al pasar por encima */
+   color: #fff; /* Cambiar el color del texto al pasar por encima */
+}
+/* Estilos para el ícono de búsqueda */
+.input-icon i {
+   position: absolute;
+   top: 50%;
+   right: 10px; /* Posición del icono a la derecha */
+   transform: translateY(-50%);
+   color: #999; /* Color del icono */
+}
 
 
 

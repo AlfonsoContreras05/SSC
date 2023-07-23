@@ -19,12 +19,13 @@ fetch('/js/catalogos/juguetes.json')
       // Agregar el contenido al contenedor de vista previa
       previewContainer.insertAdjacentHTML('beforeend', previewContent);
 
+      
       // Crear el contenido del producto
       const productContent = `
         <div class="product" data-name="${product.nombre}">
           <img src="${product.imagen}" alt="${product.nombre}">
           <h3>${product.nombre}</h3>
-          <p>${product.descripcion}</p>
+          <p>${product.categoria}</p>
           <div class="price">${product.precio}</div>
         </div>
       `;
@@ -55,3 +56,86 @@ fetch('/js/catalogos/juguetes.json')
   .catch(error => {
     console.error('Error al cargar los productos:', error);
   });
+
+  document.getElementById("back-button").addEventListener("click", function() {
+    window.history.back(); // Regresar a la vista anterior
+ });
+
+
+//filtro
+
+// Definimos la variable productsContainer y filterInput a nivel global
+const productsContainer = document.querySelector(".products-container");
+const noResultsMessage = document.getElementById("no-results-message");
+const filterInput = document.getElementById("filter-input");
+
+// Función para filtrar los productos según el término de búsqueda
+const filtrarProductos = (termino, productos) => {
+   // Convertimos el término de búsqueda a minúsculas para hacer la búsqueda case-insensitive
+   const terminoMin = termino.toLowerCase();
+
+   // Filtramos los productos que coinciden con el término de búsqueda
+   const productosFiltrados = productos.filter((producto) => {
+      const nombreMin = producto.nombre.toLowerCase();
+      return nombreMin.includes(terminoMin);
+   });
+
+   // Mostramos solo los productos filtrados o el mensaje de no coincidencias
+   if (productosFiltrados.length > 0) {
+      mostrarProductos(productosFiltrados);
+      noResultsMessage.style.display = "none";
+   } else {
+      noResultsMessage.style.display = "block";
+      productsContainer.innerHTML = "";
+   }
+};
+
+// Función para mostrar los productos en el contenedor
+const mostrarProductos = (productos) => {
+   // Limpiamos el contenedor de productos
+   productsContainer.innerHTML = "";
+
+   // Generamos dinámicamente el contenido de los productos y lo agregamos al contenedor
+   productos.forEach((producto) => {
+      // Creamos elementos para mostrar los detalles de cada producto
+      const productoDiv = document.createElement("div");
+      productoDiv.classList.add("producto");
+      productoDiv.innerHTML = `
+         <h4>${producto.nombre}</h4>
+         <p>Precio: ${producto.precio}</p>
+         <p>Categoría: ${producto.categoria}</p>
+         <img src="${producto.imagen}" alt="${producto.nombre}">
+      `;
+      productsContainer.appendChild(productoDiv);
+   });
+};
+
+// Función para cargar los datos desde el archivo JSON
+// Resto del código del archivo juguetes.js (mostrarProductos y cargarProductosDesdeJSON permanecen sin cambios)
+
+// Función para cargar los productos desde el archivo JSON
+const cargarProductosDesdeJSON = async () => {
+  try {
+    const response = await fetch('ruta-a-tu-archivo-json');
+    const data = await response.json();
+
+    const productos = data.productos;
+    mostrarProductos(productos);
+
+    // Agregar evento "input" para activar el filtrado en tiempo real
+    const filterInput = document.getElementById('filter-input');
+    filterInput.addEventListener('input', () => {
+      const terminoBusqueda = filterInput.value;
+      filtrarProductos(terminoBusqueda, productos);
+    });
+
+  } catch (error) {
+    console.log('Error al cargar los datos desde el archivo JSON:', error);
+  }
+};
+
+// Resto del código del archivo juguetes.js (mostrarProductos permanece sin cambios)
+
+
+// Cargamos los productos desde el archivo JSON al cargar la página
+cargarProductosDesdeJSON();

@@ -5,7 +5,12 @@
         "descripcion": "Con Lengua, Vibrador",
         "precio": "$5.990",
         "imagen": "https://jenylove.cl/wp-content/uploads/2022/07/DC026-6_%E5%89%AF%E6%9C%AC.jpg",
-        "categoria":"Estimuladores y Amplificadores"
+        "categoria":"Estimuladores y Amplificadores",
+        "imagenes": [
+          "https://jenylove.cl/wp-content/uploads/2022/07/DC026-6_%E5%89%AF%E6%9C%AC.jpg",
+          "https://jenylove.cl/wp-content/uploads/2022/07/DC026-6_%E5%89%AF%E6%9C%AC.jpg",
+          "https://jenylove.cl/wp-content/uploads/2022/07/DC026-6_%E5%89%AF%E6%9C%AC.jpg"
+        ]
       },
       {
         "nombre": "Anillo Dionisio",
@@ -18,121 +23,142 @@
         "nombre": "Anillo Hermes",
         "descripcion": "Con Perla estimuladora, Vibrador",
         "precio": "$4.990",
-        "imagen": "https://jenylove.cl/wp-content/uploads/2019/02/364197591-570281448.jpg"
+        "imagen": "https://jenylove.cl/wp-content/uploads/2019/02/364197591-570281448.jpg",
+        "categoria":"Estimuladores y Amplificadores"
       },
       {
         "nombre": "Plug Anal zafiro",
         "descripcion": "Acero quirurjico, L9.4cm D2.2cm",
         "precio": "$9.990",
-        "imagen": "https://jenylove.cl/wp-content/uploads/2022/07/Plug-Anal-Joya-Zafir.png"
+        "imagen": "https://jenylove.cl/wp-content/uploads/2022/07/Plug-Anal-Joya-Zafir.png",
+        "categoria":"Estimuladores y Amplificadores"
       },
       {
         "nombre": "Plug Anal Colita de Zorro",
         "descripcion": "Fantasia",
         "precio": "$15.990",
-        "imagen": "https://jenylove.cl/wp-content/uploads/2019/01/15546943241593060491.jpg"
+        "imagen": "https://jenylove.cl/wp-content/uploads/2019/01/15546943241593060491.jpg",
+        "categoria":"Estimuladores y Amplificadores"
       },
       {
         "nombre": "Plug Anal Jelly Pequeño",
         "descripcion": "Fantasia",
         "precio": "$5.990",
-        "imagen": "https://jenylove.cl/wp-content/uploads/2020/08/DN-014-14.jpg"
+        "imagen": "https://jenylove.cl/wp-content/uploads/2020/08/DN-014-14.jpg",
+        "categoria":"Estimuladores y Amplificadores"
       },
       {
         "nombre": "Plug Anal Jelly Grande",
         "descripcion": "Fantasia",
         "precio": "$7.990",
-        "imagen": "https://image.made-in-china.com/202f0j00igwkLAVlLQcn/Five-Beads-Jelly-Crystal-TPE-Material-Anal-Plug-Anal-Dilatation-Device.webp"
+        "imagen": "https://image.made-in-china.com/202f0j00igwkLAVlLQcn/Five-Beads-Jelly-Crystal-TPE-Material-Anal-Plug-Anal-Dilatation-Device.webp",
+        "categoria":"Estimuladores y Amplificadores"
       },
       {
         "nombre": "Plug Anal Colita de Conejo",
         "descripcion": "Fantasia",
         "precio": "$15.990",
-        "imagen": "https://jenylove.cl/wp-content/uploads/2022/07/Plug-Anal-Cola-de-Conejo-de-JenyLove.png"
+        "imagen": "https://jenylove.cl/wp-content/uploads/2022/07/Plug-Anal-Cola-de-Conejo-de-JenyLove.png",
+        "categoria":"Estimuladores y Amplificadores"
       },
       {
         "nombre": "Masturbador Vibrador",
         "descripcion": "forma de vagina, a pilas",
         "precio": "$22.990",
-        "imagen": "https://abaratalo.com/wp-content/uploads/2022/07/mv18622-8.jpg"
+        "imagen": "https://abaratalo.com/wp-content/uploads/2022/07/mv18622-8.jpg",
+        "categoria":"Vibradores"
       },
       {
         "nombre": "Masturbador Realista",
         "descripcion": "Senos-Vagina-Ano",
         "precio": "$39.990",
-        "imagen": "https://www.ropafetish.com/23219-thickbox_default/masturbador-tetas.jpg"
+        "imagen": "https://www.ropafetish.com/23219-thickbox_default/masturbador-tetas.jpg",
+        "categoria":"Vibradores"
       },
       {
         "nombre": "Bomba de Vacio",
         "descripcion": "Incrementa el tamaño del pene",
         "precio": "$19.990",
-        "imagen": "https://jenylove.cl/wp-content/uploads/2019/08/Bomba-De-vacio.png"
+        "imagen": "https://jenylove.cl/wp-content/uploads/2019/08/Bomba-De-vacio.png",
+        "categoria":"Estimuladores y Amplificadores"
+        
       },
       {
         "nombre": "Kit Bondage Completo",
         "descripcion": "10 articulos Ecocuero, color negro o rojo",
         "precio": "$33.990",
-        "imagen": "https://jenylove.cl/wp-content/uploads/2019/02/kit-de-bondage.jpg"
+        "imagen": "https://jenylove.cl/wp-content/uploads/2019/02/kit-de-bondage.jpg",
+        "categoria":"Bondage"
       },
       {
         "nombre": "Esposas Bondage",
         "descripcion": "Ecocuero, forradas ajustables",
         "precio": "$5.990",
-        "imagen": "https://jenylove.cl/wp-content/uploads/2018/10/esposas-1.jpg"
+        "imagen": "https://jenylove.cl/wp-content/uploads/2018/10/esposas-1.jpg",
+        "categoria":"Bondage"
       },
       {
         "nombre": "Latigo Bondage",
         "descripcion": "Ecocuero, Color rosa",
         "precio": "$5.990",
-        "imagen": "https://s.cornershopapp.com/product-images/5636576.jpg?versionId=Ef3XIBiwhuIAg6lilrtxkvr9Dhhl4TuO"
+        "imagen": "https://s.cornershopapp.com/product-images/5636576.jpg?versionId=Ef3XIBiwhuIAg6lilrtxkvr9Dhhl4TuO",
+        "categoria":"Bondage"
       },
       {
         "nombre": "Vibrador Caracol",
         "descripcion": "Con estimulador de punto g y clitoris",
         "precio": "$34.990",
-        "imagen": "https://jenylove.cl/wp-content/uploads/2021/01/6137-6.jpg"
+        "imagen": "https://jenylove.cl/wp-content/uploads/2021/01/6137-6.jpg",
+        "categoria":"Vibradores"
       },
       {
         "nombre": "Vibrador liso",
         "descripcion": "Super flexible con estimulador punto g",
         "precio": "$19.990",
-        "imagen": "https://jenylove.cl/wp-content/uploads/2020/07/DG-008-16.jpg"
+        "imagen": "https://jenylove.cl/wp-content/uploads/2020/07/DG-008-16.jpg",
+        "categoria":"Vibradores"
       },
       {
         "nombre": "Vibrador Baby",
         "descripcion": "Con estimulador punto g Carga USB",
         "precio": "$39.990",
-        "imagen": "https://jenylove.cl/wp-content/uploads/2021/01/6173-1.jpg"
+        "imagen": "https://jenylove.cl/wp-content/uploads/2021/01/6173-1.jpg",
+        "categoria":"Vibradores"
       },
       {
         "nombre": "Vibrador Hojita",
         "descripcion": "100% silicona Silencioso",
         "precio": "$27.990",
-        "imagen": "https://jenylove.cl/wp-content/uploads/2022/05/hojitas.jpeg"
+        "imagen": "https://jenylove.cl/wp-content/uploads/2022/05/hojitas.jpeg",
+        "categoria":"Vibradores"
       },
       {
         "nombre": "Vibrador Adora",
         "descripcion": "10 tipos de vibracion conejito estimulador",
         "precio": "$29.990",
-        "imagen": "https://jenylove.cl/wp-content/uploads/2019/03/6139-2.jpg"
+        "imagen": "https://jenylove.cl/wp-content/uploads/2019/03/6139-2.jpg",
+        "categoria":"Vibradores"
       },
       {
         "nombre": "Vibrador Corazon",
         "descripcion": "Silicona Inalambrico con textura carga Usb",
         "precio": "$34.990",
-        "imagen": "https://jenylove.cl/wp-content/uploads/2020/10/5214-6.jpg"
+        "imagen": "https://jenylove.cl/wp-content/uploads/2020/10/5214-6.jpg",
+        "categoria":"Vibradores"
       },
       {
         "nombre": "Vibrador Spark",
         "descripcion": "Control remoto a distancia",
         "precio": "$34.990",
-        "imagen": "https://i.linio.com/p/f4c2005ebdfdefc7e3738c9ef606a110-product.webp"
+        "imagen": "https://i.linio.com/p/f4c2005ebdfdefc7e3738c9ef606a110-product.webp",
+        "categoria":"Vibradores"
       },
       {
         "nombre": "Vibrador Jumper",
         "descripcion": "Huevo control remoto",
         "precio": "$34.990",
-        "imagen": "https://intimatedistribution.com/wp-content/uploads/2022/06/Intimate-Remote-Jump-Egg-Vibrator-Purple.png"
+        "imagen": "https://intimatedistribution.com/wp-content/uploads/2022/06/Intimate-Remote-Jump-Egg-Vibrator-Purple.png",
+        "categoria":"Vibradores"
       }
       
     ]

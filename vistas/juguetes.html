@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,14 +16,29 @@
 
 </head>
 <body>
-   
+
+    <div class="navbar">
+        <h3 class="title">Juguetes</h3>
+        
+        <div class="filter-container">
+           <input type="text" id="filter-input" placeholder="Buscar juguetes...">
+
+        </div>
+        <button id="back-button" class="back-button">
+           <i class="fas fa-arrow-left"></i> Regresar
+        </button>
+     </div>
+
    <div class="container">
 
-      <h3 class="title">Juguetes</h3>
+
    
       <div class="products-container">
          <!-- El catálogo de productos se generará dinámicamente aquí -->
       </div>
+
+            <!-- Elemento para mostrar el mensaje de no coincidencias -->
+            <div id="no-results-message" class="no-results-message">No Disponible Por hoy Perra</div>
    
    </div>
 
