@@ -1,5 +1,5 @@
 :root {
-  --corPrimaria: #630e0a;
+  --corPrimaria: #630e0abc;
   --corSecundaria: #fad1d1;
   --corTerciaria: #51a240;
   --branco: #eee;
@@ -51,8 +51,8 @@ header {
   height: 100vh;
   background-image: linear-gradient(
       90deg,
-      rgba(99, 14, 10, 0.8) 0%,
-      rgba(153, 14, 8, 0.8) 100%
+      rgba(99, 14, 10, 0.25) 0%,
+      rgba(153, 13, 8, 0.246) 100%
     ),
     url("#");
   position: relative;
@@ -68,6 +68,30 @@ video {
   height: 100%;
   object-fit: cover;
   z-index: -1; /* Asegura que el video esté detrás del contenido */
+}
+/* Estilos para el contenedor del video */
+.video-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Estilos para el video */
+.video-container video {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para la capa semi-transparente */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.112); /* Color de fondo semi-transparente rojo (RGBA) */
+  z-index: 1; /* Asegura que la capa esté por encima del video */
+  pointer-events: none; /* Permite que los clics pasen a través de la capa */
 }
 
 .logo-box {
