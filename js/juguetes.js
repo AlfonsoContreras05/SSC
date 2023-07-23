@@ -1,75 +1,92 @@
-const catalogo = document.querySelector("#catalogo");
+// script.js
 
-fetch("/js/catalogos/juguetes.json")
+fetch('/js/catalogos/juguetes.json')
   .then(response => response.json())
-  .then(data => exibeProductos(data.productos))
-  .catch(error => console.error("Error al cargar el catálogo:", error));
+  .then(data => {
+    const productsContainer = document.querySelector('.products-container');
+    const previewContainer = document.querySelector('.products-preview');
 
-function exibeProductos(productos) {
-  productos.forEach(producto => {
-    const card = document.createElement('div');
-    card.classList.add('flip-card');
+    data.productos.forEach(product => {
+      const productDiv = document.createElement('div');
+      productDiv.classList.add('product');
+      productDiv.setAttribute('data-name', product.nombre);
 
-    const cardInner = document.createElement('div');
-    cardInner.classList.add('flip-card-inner');
+      const productImage = document.createElement('img');
+      productImage.src = product.imagen;
+      productImage.alt = product.nombre;
 
-    const cardFront = document.createElement('div');
-    cardFront.classList.add('flip-card-front');
+      const productName = document.createElement('h3');
+      productName.textContent = product.nombre;
 
-    const cardBack = document.createElement('div');
-    cardBack.classList.add('flip-card-back');
+      const productRating = document.createElement('div');
+      productRating.classList.add('stars');
+      const rating = Math.floor(Math.random() * 5) + 1;
+      for (let i = 0; i < 5; i++) {
+        const starIcon = document.createElement('i');
+        if (i < rating) {
+          starIcon.classList.add('fas', 'fa-star');
+        } else if (i === rating) {
+          starIcon.classList.add('fas', 'fa-star-half-alt');
+        } else {
+          starIcon.classList.add('far', 'fa-star');
+        }
+        productRating.appendChild(starIcon);
+      }
+      const ratingCount = document.createElement('span');
+      ratingCount.textContent = `( ${Math.floor(Math.random() * 500)} )`;
+      productRating.appendChild(ratingCount);
 
-    const productImage = document.createElement('img');
-    productImage.classList.add('product-image');
-    productImage.src = producto.imagen;
+      const productDescription = document.createElement('p');
+      productDescription.textContent = product.descripcion;
 
-    const productName = document.createElement('p');
-    productName.classList.add('title');
-    productName.textContent = producto.nombre;
+      const productPrice = document.createElement('div');
+      productPrice.classList.add('price');
+      productPrice.textContent = product.precio;
 
-    const productDescription = document.createElement('p');
-    productDescription.classList.add('description');
-    productDescription.textContent = producto.descripcion;
+      const buttonsDiv = document.createElement('div');
+      buttonsDiv.classList.add('buttons');
 
-    const productPrice = document.createElement('p');
-    productPrice.classList.add('price');
-    productPrice.textContent = producto.precio;
+      const buyButton = document.createElement('a');
+      buyButton.classList.add('buy');
+      buyButton.href = '#';
+      buyButton.textContent = 'buy now';
 
-    cardFront.appendChild(productImage);
-    cardBack.appendChild(productName);
-    cardBack.appendChild(productDescription);
-    cardBack.appendChild(productPrice);
+      const cartButton = document.createElement('a');
+      cartButton.classList.add('cart');
+      cartButton.href = '#';
+      cartButton.textContent = 'add to cart';
 
-    cardInner.appendChild(cardFront);
-    cardInner.appendChild(cardBack);
+      buttonsDiv.appendChild(buyButton);
+      buttonsDiv.appendChild(cartButton);
 
-    card.appendChild(cardInner);
+      productDiv.appendChild(productImage);
+      productDiv.appendChild(productName);
+      productDiv.appendChild(productRating);
+      productDiv.appendChild(productDescription);
+      productDiv.appendChild(productPrice);
+      productDiv.appendChild(buttonsDiv);
 
-    catalogo.appendChild(card);
-  });
-}
+      productsContainer.appendChild(productDiv);
 
-// Agrega esta función para habilitar el desplazamiento suave
-function scrollToSection(event) {
-    event.preventDefault();
-    const target = event.target.getAttribute('href');
-    document.querySelector(target).scrollIntoView({
-      behavior: 'smooth'
+      productDiv.onclick = () => {
+        previewContainer.style.display = 'flex';
+        previewBox.forEach(preview => {
+          if (preview.dataset.target === product.nombre) {
+            preview.classList.add('active');
+          }
+        });
+      };
     });
-  }
-  
-  // Selecciona los enlaces de navegación y agrega el evento de clic
-  const navLinks = document.querySelectorAll('.nav-link');
-  navLinks.forEach(link => {
-    link.addEventListener('click', scrollToSection);
+
+    const previewBox = previewContainer.querySelectorAll('.preview');
+
+    previewBox.forEach(close => {
+      close.querySelector('.fa-times').onclick = () => {
+        close.classList.remove('active');
+        previewContainer.style.display = 'none';
+      };
+    });
+  })
+  .catch(error => {
+    console.error('Error al cargar los productos:', error);
   });
-  
-// Agrega la clase "show" a los enlaces de navegación después de 1 segundo
-window.addEventListener('load', () => {
-    setTimeout(() => {
-      navLinks.forEach(link => {
-        link.classList.add('show');
-      });
-    }, 1000);
-  });
-  
