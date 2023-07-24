@@ -133,7 +133,7 @@ video {
   letter-spacing: 7px;
   font-weight: 700;
   display: block;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   animation: moveInRight 1s;
 }
 
@@ -720,3 +720,30 @@ footer h3 {
     align-items: center;
   }
 }
+
+
+
+/* boton wsp */
+
+/* Estilos para el botón redondo */
+/* Estilos para el botón que simula el estilo de WhatsApp */
+.round-button.wa-style {
+  background-color: #25d366;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
+.round-button.wa-style i {
+  font-size: 30px; /* Tamaño del ícono de WhatsApp (ajústalo según tus preferencias) */
+}
+
