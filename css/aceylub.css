@@ -158,7 +158,10 @@ body{
 
 
 
-
+#no-results-message {
+   display: none;
+ }
+ 
 
 
 
