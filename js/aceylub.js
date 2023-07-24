@@ -11,7 +11,7 @@ fetch('/js/catalogos/aceylub.json')
           <img src="${product.imagen}" alt="${product.nombre}">
           <h3>${product.nombre}</h3>
           <p>${product.descripcion}</p>
-          <div class="category">Category: ${product.categoria}</div>
+          <div class="category">Categoría: ${product.categoria || 'Valor por definir'}</div>
           <div class="price">${product.precio}</div>
           <i class="fas fa-times"></i>
         </div>
@@ -25,7 +25,7 @@ fetch('/js/catalogos/aceylub.json')
         <div class="product" data-name="${product.nombre}">
           <img src="${product.imagen}" alt="${product.nombre}">
           <h3>${product.nombre}</h3>
-          <p>${product.categoria}</p>
+          <p>${product.categoria || 'Valor por definir'}</p>
           <div class="price">${product.precio}</div>
         </div>
       `;
@@ -38,9 +38,12 @@ fetch('/js/catalogos/aceylub.json')
     document.querySelectorAll('.products-container .product').forEach(product => {
       product.onclick = () => {
         previewContainer.style.display = 'flex';
+        const productName = product.getAttribute('data-name');
         previewBox.forEach(preview => {
-          if (preview.dataset.target === product.getAttribute('data-name')) {
+          if (preview.dataset.target === productName) {
             preview.classList.add('active');
+          } else {
+            preview.classList.remove('active'); // Ocultar las vistas previas no seleccionadas
           }
         });
       };
@@ -57,9 +60,6 @@ fetch('/js/catalogos/aceylub.json')
     console.error('Error al cargar los productos:', error);
   });
 
-  document.getElementById("back-button").addEventListener("click", function() {
-    window.history.back(); // Regresar a la vista anterior
- });
-
-
-//filtro
+document.getElementById("back-button").addEventListener("click", function() {
+  window.history.back(); // Regresar a la vista anterior
+});

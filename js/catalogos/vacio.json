@@ -1,0 +1,33 @@
+{
+    "productos": [
+      {
+        "nombre": "Producto 5",
+        "descripcion": "Descripción del producto 5",
+        "precio": "$XX.XX",
+        "imagen": "URL de la imagen del producto 5",
+        "categoria": "Valor por definir"
+      },
+      {
+        "nombre": "Producto 6",
+        "descripcion": "Descripción del producto 6",
+        "precio": "$XX.XX",
+        "imagen": "URL de la imagen del producto 6",
+        "categoria": "Valor por definir"
+      },
+      {
+        "nombre": "Producto 7",
+        "descripcion": "Descripción del producto 7",
+        "precio": "$XX.XX",
+        "imagen": "URL de la imagen del producto 7",
+        "categoria": "Valor por definir"
+      },
+      {
+        "nombre": "Producto 8",
+        "descripcion": "Descripción del producto 8",
+        "precio": "$XX.XX",
+        "imagen": "URL de la imagen del producto 8",
+        "categoria": "Valor por definir"
+      }
+    ]
+  }
+  
