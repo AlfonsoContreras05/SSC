@@ -94,7 +94,7 @@ filterInput.addEventListener('input', function() {
 
 // Event listener para el botón de regreso
 document.getElementById("back-button").addEventListener("click", function() {
-  window.history.back(); // Regresar a la vista anterior
+  window.location.href = "../index.html";
 });
 
 filterInput.addEventListener('input', function() {
