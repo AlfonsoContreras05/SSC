@@ -159,8 +159,35 @@
         "precio": "$34.990",
         "imagen": "https://intimatedistribution.com/wp-content/uploads/2022/06/Intimate-Remote-Jump-Egg-Vibrator-Purple.png",
         "categoria":"Vibradores"
+      },
+      {
+        "nombre": "Vibrador Abner",
+        "descripcion": "Color Fucsia, 3 intensidades de vibración, 9 tipos de pulsaciones, Recargable USB",
+        "precio": "$49.990",
+        "imagen": "https://www.starsex.cl/cdn/shop/products/pretty-love-juguetes-estimulador-femenino-abner-29868404310205_2000x.jpg?v=1628353993",
+        "categoria":"Vibradores"
+      },
+      {
+        "nombre": "Dildo Nature N°2",
+        "descripcion": "Ventosa ultra adherente, L:17cm, Insertable:15cm, D:4cm",
+        "precio": "$19.990",
+        "imagen": "https://www.starsex.cl/cdn/shop/products/real-skin-juguetes-dildo-realistico-soft-n-2-nature-18707473989782_2000x.jpg?v=1682462038",
+        "categoria":"Dildo"
+      },
+      {
+        "nombre": "Dildo Coloso N°12",
+        "descripcion": "Ventosa ultra adherente, L:24cm, Insertable:18cm, D:5cm",
+        "precio": "$19.990",
+        "imagen": "https://falabella.scene7.com/is/image/Falabella/110583038_1?wid=800&hei=800&qlt=70",
+        "categoria":"Dildo"
+      },
+      {
+        "nombre": "Dildo Bananin",
+        "descripcion": "Ventosa adherente, L:20.5cm, Insertable:18.5cm, D:4.5cm",
+        "precio": "$13.990",
+        "imagen": "https://tujuguetito.cl/228-large_default/consolador-sex-pop-bananin.jpg",
+        "categoria":"Dildo"
       }
       
     ]
   }
-  
