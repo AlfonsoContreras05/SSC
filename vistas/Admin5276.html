@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Panel de Administrador</title>
+   
+   <!-- font awesome cdn link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link -->
+   <link rel="stylesheet" href="/css/admin5276.css">
+
+   <!-- custom js file link -->
+
+</head>
+<body>
+    <div class="container">
+        <h1>Panel de Administrador</h1>
+        
+        <!-- Botón para mostrar el formulario de agregar producto -->
+        <button id="add-product-button" class="button">Agregar Producto</button>
+        
+        <!-- Tabla para mostrar los productos existentes -->
+        <table id="product-table">
+           <thead>
+              <tr>
+                 <th>Nombre</th>
+                 <th>Precio</th>
+                 <th>Categoría 
+                   <select id="category-filter">
+                     <option value="">Todas las categorías</option>
+                     <!-- Aquí se generarán dinámicamente las opciones del selector de categorías -->
+                   </select>
+                 </th>
+                 <th>Acciones</th>
+              </tr>
+           </thead>
+           <tbody>
+              <!-- Aquí se generará dinámicamente la lista de productos -->
+           </tbody>
+        </table>
+
+        <!-- Formulario para agregar productos (se mostrará al hacer clic en el botón de agregar) -->
+        <div class="overlay" id="add-product-popup">
+            <div class="form-container">
+               <h2>Agregar Producto</h2>
+               <input type="text" id="product-name" placeholder="Nombre del producto">
+               <input type="text" id="product-description" placeholder="Descripción del producto">
+               <input type="text" id="product-price" placeholder="Precio del producto">
+               <input type="text" id="product-image" placeholder="URL de la imagen">
+               <input type="text" id="product-category" placeholder="Categoría del producto">
+               <button id="submit-button" class="button">Agregar</button>
+               <button id="cancel-button" class="button">Cancelar</button>
+            </div>
+        </div>
+  
+        <!-- Mensaje para mostrar el resultado de las acciones (agregar, editar, eliminar) -->
+        <div class="message" id="result-message"></div>
+     </div>
+
+     <!-- Aquí va el contenido de la vista de administrador -->
+     <script src="/js/admin5276.js"></script>
+</body>
+</html>
