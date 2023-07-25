@@ -18,12 +18,25 @@ fetch('/js/catalogos/aceylub.json')
 function renderProducts(products) {
   const productsContainer = document.querySelector('.products-container');
   const previewContainer = document.querySelector('.products-preview');
-
+  let tagClass = '';
   // Asegúrate de que los contenedores están vacíos antes de llenarlos
   productsContainer.innerHTML = '';
   previewContainer.innerHTML = '';
 
   products.forEach(product => {
+    // Creamos las etiquetas de estado para cada producto
+    let tagClass = '';
+    if (product.estado === 'disponible') {
+      tagClass = 'disponible';
+    } else if (product.estado === 'pocas unidades') {
+      tagClass = 'pocas-unidades';
+    } else if (product.estado === 'reserva') {
+      tagClass = 'reserva';
+    } else if (product.estado === 'agotado') {
+      tagClass = 'agotado';
+    }
+
+
     // Crear el contenido para mostrar en la vista previa
     const previewContent = `
         <div class="preview" data-target="${product.nombre}">
@@ -45,6 +58,7 @@ function renderProducts(products) {
           <img src="${product.imagen}" alt="${product.nombre}">
           <h3>${product.nombre}</h3>
           <p>${product.categoria}</p>
+          <div class="product-status ${tagClass}">${product.estado}</div>
           <div class="price">${product.precio}</div>
         </div>
       `;
@@ -75,7 +89,7 @@ function renderProducts(products) {
 }
 
 // Agrega un event listener para la entrada del filtro
-filterInput.addEventListener('input', function() {
+filterInput.addEventListener('input', function () {
   const filterValue = this.value.toLowerCase();
 
   // Filtra los productos basado en el nombre
@@ -93,7 +107,7 @@ filterInput.addEventListener('input', function() {
 });
 
 // Event listener para el botón de regreso
-document.getElementById("back-button").addEventListener("click", function() {
+document.getElementById("back-button").addEventListener("click", function () {
   window.location.href = "../index.html";
 });
 

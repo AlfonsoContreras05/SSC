@@ -5,28 +5,32 @@
       "descripcion": "Encaje Medias , portaligas y calzon",
       "precio": "$25.990",
       "imagen": "https://ae01.alicdn.com/kf/S692c7c2daa30464e86888a1832a60d04U/Catsuit-de-charol-para-mujer-lencer-a-Sexy-de-malla-body-transparente-ropa-interior-er-tica.jpg_220x220.jpg_.webp",
-      "categoria": "Lenceria y Corset"
+      "categoria": "Lenceria y Corset",
+      "estado": "disponible"
     },
     {
       "nombre": "Conjunto corset brillante",
       "descripcion": "colales, portaligas y medias de red",
       "precio": "$29.990",
       "imagen": "https://jenylove.cl/wp-content/uploads/2023/02/Corset-Sexy-8051.png",
-      "categoria": "Lenceria y Corset"
+      "categoria": "Lenceria y Corset",
+      "estado": "reserva"
     },
     {
       "nombre": "Corset negro detalles rojos",
       "descripcion": "colales, portaligas y medias de red",
       "precio": "$27.990",
       "imagen": "https://jenylove.cl/wp-content/uploads/2023/02/Corset-Sexy-8052.png",
-      "categoria": "Lenceria y Corset"
+      "categoria": "Lenceria y Corset",
+      "estado": "disponible"
     },
     {
       "nombre": "Corset sexy negro rosa",
       "descripcion": "colales, portaligas y medias de red",
       "precio": "$28.990",
       "imagen": "https://jenylove.cl/wp-content/uploads/2021/08/Corset-Sexy.png",
-      "categoria": "Lenceria y Corset"
+      "categoria": "Lenceria y Corset",
+      "estado": "disponible"
     }
   ]
 }

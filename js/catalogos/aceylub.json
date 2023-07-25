@@ -5,154 +5,176 @@
       "descripcion": "A base de agua, efecto calor 30ml",
       "precio": "$5.990",
       "imagen": "https://jenylove.cl/wp-content/uploads/2022/11/Lubricante-FuegoSex-Efecto-Calor.webp",
-      "categoria": "Lubricante"
+      "categoria": "Lubricante",
+      "estado": "disponible"
     },
     {
       "nombre": "Lubricante Ice",
       "descripcion": "A base de agua, efecto Hielo 30ml",
       "precio": "$5.990",
       "imagen": "https://jenylove.cl/wp-content/uploads/2022/11/Lubricante-Hielo-Sex-Efecto-Frio.webp",
-      "categoria": "Lubricante"
+      "categoria": "Lubricante",
+      "estado": "disponible"
     },
     {
       "nombre": "Lubricante Chocolate",
       "descripcion": "A base de agua, Comestible 30ml",
       "precio": "$5.990",
       "imagen": "https://jenylove.cl/wp-content/uploads/2022/11/Lubricante-ChocoSex-Sabor-Chocolate.webp",
-      "categoria": "Lubricante"
+      "categoria": "Lubricante",
+      "estado": "disponible"
     },
     {
       "nombre": "Lubricante Aloe Vera",
       "descripcion": "A base de agua, 60ml",
       "precio": "$9.990",
       "imagen": "https://jenylove.cl/wp-content/uploads/2022/10/Gel-Lubricante-Premium-Aloe.webp",
-      "categoria": "Lubricante"
+      "categoria": "Lubricante",
+      "estado": "disponible"
     },
     {
       "nombre": "Gel Anal dilatador",
       "descripcion": "A base de agua, 60ml",
       "precio": "$10.990",
       "imagen": "https://jenylove.cl/wp-content/uploads/2022/10/Gel-Lubricante-Premium-Anal-con-Dilatador.webp",
-      "categoria": "Gel"
+      "categoria": "Gel",
+      "estado": "disponible"
     },
     {
       "nombre": "Gel retardante",
       "descripcion": "A base de agua, 60ml",
       "precio": "$9.990",
       "imagen": "https://jenylove.cl/wp-content/uploads/2023/01/Gel-Lubricante-Premium-con-Retardante.png",
-      "categoria": "Gel"
+      "categoria": "Gel",
+      "estado": "disponible"
     },
     {
       "nombre": "Gel Anal Anestesico",
       "descripcion": "A base de agua, 60ml",
       "precio": "$10.990",
       "imagen": "https://jenylove.cl/wp-content/uploads/2020/02/Diseno-sin-titulo13.png",
-      "categoria": "Gel"
+      "categoria": "Gel",
+      "estado": "disponible"
     },
     {
       "nombre": "Feromona Para mujer",
       "descripcion": "Con aroma, 30ml",
       "precio": "$12.200",
       "imagen": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRZM5Em-YdE4zP_sVTsriCRzIo2-uilUK3YTKxYDgoHYaX9Z_QxM_0xA2NWeCpsHKXgvFQEDS0MFxY2VvQqWigofz5UZX6B1JyYeTUHiI73492fGLQYYczVOj9G&usqp=CAE",
-      "categoria": "Spray"
+      "categoria": "Spray",
+      "estado": "disponible"
     },
     {
       "nombre": "Aceite Premium masajes Tutifruti",
       "descripcion": "Sabor tutifruti, comestible 60ml",
       "precio": "$9.990",
       "imagen": "https://jenylove.cl/wp-content/uploads/2020/10/frutilla.png",
-      "categoria": "Aceite"
+      "categoria": "Aceite",
+      "estado": "disponible"
     },
     {
       "nombre": "Aceite Premium masajes Chocolate",
       "descripcion": "Sabor Chocolate, comestible 60ml",
       "precio": "$9.990",
       "imagen": "https://jenylove.cl/wp-content/uploads/2020/10/chocolate.png",
-      "categoria": "Aceite"
+      "categoria": "Aceite",
+      "estado": "disponible"
     },
     {
       "nombre": "Aceite Premium masajes Bailey",
       "descripcion": "Sabor Bailey, comestible 60ml",
       "precio": "$9.990",
       "imagen": "https://jenylove.cl/wp-content/uploads/2020/10/bailey.png",
-      "categoria": "Aceite"
+      "categoria": "Aceite",
+      "estado": "disponible"
     },
     {
       "nombre": "Potenciador V95",
       "descripcion": "10 Capsulas",
       "precio": "$9.990",
       "imagen": "https://jenylove.cl/wp-content/uploads/2020/01/V95-MEN-10-CAPSULAS.webp",
-      "categoria": "Potenciador"
+      "categoria": "Potenciador",
+      "estado": "disponible"
     },
     {
       "nombre": "Preservativos SensorPlus Sabores",
       "descripcion": "Tres Sabores , Frutilla , Vainilla , Banana",
       "precio": "$1.490",
       "imagen": "https://www.starsex.cl/cdn/shop/files/esan-accesorios-tres-sabores-sensor-plus-tres-sabores-40828443787497_2000x.png?v=1683302344",
-      "categoria": "Preservativos"
+      "categoria": "Preservativos",
+      "estado": "disponible"
     },
     {
       "nombre": "Preservativos SensorPlus Magic",
       "descripcion": "Brilla en la oscuridad, 3 Unidades",
       "precio": "$1.490",
       "imagen": "https://www.starsex.cl/cdn/shop/files/esan-accesorios-magic-fluor-preservativos-sensorplus-magic-40828445360361_2000x.png?v=1683302521",
-      "categoria": "Preservativos"
+      "categoria": "Preservativos",
+      "estado": "disponible"
     },
     {
       "nombre": "Preservativos SensorPlus Three Feelds",
       "descripcion": "Triple estimulacion",
       "precio": "$1.490",
       "imagen": "https://http2.mlstatic.com/D_NQ_NP_947483-MLC47352734931_092021-O.webp",
-      "categoria": "Preservativos"
+      "categoria": "Preservativos",
+      "estado": "disponible"
     },
     {
       "nombre": "Preservativos SensorPlus Long Love",
       "descripcion": "Accion retardante",
       "precio": "$1.490",
       "imagen": "https://res.cloudinary.com/wpchile/image/upload/f_auto,q_auto,w_400/easyfarma/woo_product/26623/sensorplus_longlove.jpg",
-      "categoria": "Preservativos"
+      "categoria": "Preservativos",
+      "estado": "disponible"
     },
     {
       "nombre": "Hot Lubricante Intimo",
       "descripcion": "30 ml, Efecto calor, Incoloro, Sin Olor, No mancha",
       "precio": "$5.990",
       "imagen": "https://www.starsex.cl/cdn/shop/products/starsex-cosmetica-hot-lubricante-intimo-18691011510422_2000x.jpg?v=1637962002",
-      "categoria": "Lubricantes"
+      "categoria": "Lubricantes",
+      "estado": "disponible"
     },
     {
       "nombre": "Lubricante efecto calor - Frutilla",
       "descripcion": "30 ml, Efecto calor,Sin Azucar, Sabor y aroma Frutilla, No mancha",
       "precio": "$5.990",
       "imagen": "https://www.starsex.cl/cdn/shop/products/starsex-cosmetica-lubricante-efecto-calor-frutilub-30ml-36235253809385_2000x.jpg?v=1638480949",
-      "categoria": "Lubricantes"
+      "categoria": "Lubricantes",
+      "estado": "disponible"
     },
     {
       "nombre": "Lubricante efecto calor - Chocolate",
       "descripcion": "30 ml, Efecto calor, Sabor y aroma Chocolate, No mancha",
       "precio": "$5.990",
       "imagen": "https://www.starsex.cl/cdn/shop/products/starsex-lubricante-chocolate-caliente-4-en-1-36235418271977_2000x.jpg?v=1638482927",
-      "categoria": "Lubricantes"
+      "categoria": "Lubricantes",
+      "estado": "disponible"
     },
     {
       "nombre": "Lubricante efecto Virgen",
       "descripcion": "30 ml, Efecto calor, Incoloro, Sin Olor, No mancha, no graso",
       "precio": "$8.990",
       "imagen": "https://www.starsex.cl/cdn/shop/products/starsex-cosmetica-virgin-astringente-vaginal-18638996963478_2000x.jpg?v=1628393764",
-      "categoria": "Lubricantes"
+      "categoria": "Lubricantes",
+      "estado": "disponible"
     },
     {
       "nombre": "Lubricante Femenino",
       "descripcion": "De base acuosa. con dispensador para una fácil aplicación, Compatible con preservativos y juguetes sexuales, Suave olor y sabor a frutilla, Comestible, Uso externo, interno y sexo oral.",
       "precio": "$7.990",
       "imagen": "https://www.starsex.cl/cdn/shop/products/starsex-lubricante-femenino-100ml-botella-36582240780521_2000x.jpg?v=1642611579",
-      "categoria": "Lubricantes"
+      "categoria": "Lubricantes",
+      "estado": "disponible"
     },
     {
       "nombre": "Lubricante Retardante Masculino",
       "descripcion": "60ml Hipoalergénico, A base de agua",
       "precio": "$7.990",
       "imagen": "https://www.starsex.cl/cdn/shop/files/starsex-lubricante-retardante-60ml-botella-40823892476137_2000x.png?v=1683224763",
-      "categoria": "Lubricantes"
+      "categoria": "Lubricantes",
+      "estado": "disponible"
     }
   ]
   

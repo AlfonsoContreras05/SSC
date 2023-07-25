@@ -302,3 +302,42 @@ body{
       font-size: 50%;
    }
 }
+/* El resto de los estilos CSS sigue igual */
+
+/* Estilos para las etiquetas de estado */
+
+ 
+.product {
+   position: relative;
+   /* el resto de tu CSS para .product va aquí */
+ }
+ 
+
+.product-status {
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
+   padding: 0.5rem 1rem;
+   font-size: 1.6rem;
+   font-weight: bold;
+   color: #fff;
+   border-radius: 0.5rem;
+ }
+ 
+ /* Estilos para cada estado específico */
+ .product-status.disponible {
+   background-color: #27ae60;
+ }
+ 
+ .product-status.pocas-unidades {
+   background-color: #f39c12;
+ }
+ 
+ .product-status.reserva {
+   background-color: #3498db;
+ }
+ 
+ .product-status.agotado {
+   background-color: #e74c3c;
+ }
+ 

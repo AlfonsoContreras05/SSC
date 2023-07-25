@@ -25,6 +25,17 @@ function renderProducts(products) {
 
   products.forEach(product => {
     // Crear el contenido para mostrar en la vista previa
+    let tagClass = '';
+    if (product.estado === 'disponible') {
+      tagClass = 'disponible';
+    } else if (product.estado === 'pocas unidades') {
+      tagClass = 'pocas-unidades';
+    } else if (product.estado === 'reserva') {
+      tagClass = 'reserva';
+    } else if (product.estado === 'agotado') {
+      tagClass = 'agotado';
+    }
+
     const previewContent = `
         <div class="preview" data-target="${product.nombre}">
           <img src="${product.imagen}" alt="${product.nombre}">
@@ -45,6 +56,7 @@ function renderProducts(products) {
           <img src="${product.imagen}" alt="${product.nombre}">
           <h3>${product.nombre}</h3>
           <p>${product.categoria}</p>
+          <div class="product-status ${tagClass}">${product.estado}</div>
           <div class="price">${product.precio}</div>
         </div>
       `;
