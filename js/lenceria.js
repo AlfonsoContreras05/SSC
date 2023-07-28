@@ -127,3 +127,5 @@ filterInput.addEventListener('input', function() {
     noResultsMessage.style.display = 'none';
   }
 });
+// Lenceria.html (y lo mismo para juguetes.html y aceylub.html)
+

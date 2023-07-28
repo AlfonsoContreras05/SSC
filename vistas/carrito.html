@@ -1,0 +1,25 @@
+<!-- carrito.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de compras</title>
+</head>
+<body>
+  <h1>Carrito de compras</h1>
+  <ul>
+    <!-- Recorre los elementos del carrito y muéstralos en una lista -->
+    <script>
+      const cartItems = getCartItems();
+      cartItems.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.textContent = item.nombre;
+        document.body.appendChild(listItem);
+      });
+    </script>
+  </ul>
+  <button onclick="clearCart()">Vaciar carrito</button>
+  <!-- Agrega aquí la funcionalidad para finalizar la compra y realizar el pago -->
+</body>
+</html>
