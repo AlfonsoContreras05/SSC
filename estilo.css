@@ -516,10 +516,13 @@ footer h3 {
   font-size: 2rem;
   color: var(--corPrimaria);
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
 }
 
+
 .footer-container {
-  display: list-item;
+  display: flexbox;
   grid-template-columns: 1fr 2fr;
   grid-auto-rows: auto;
   grid-template-areas:
@@ -536,7 +539,8 @@ footer h3 {
 }
 
 .social {
-  grid-area: social;
+  display: flex;
+  justify-content: center;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
@@ -561,6 +565,10 @@ footer h3 {
 
 .helper {
   color: #aaa9a9;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .txt-social {
