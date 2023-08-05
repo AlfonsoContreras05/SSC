@@ -191,7 +191,71 @@
       "imagen": "https://sexshopmayorista.cl/16560-large_default/ducha-anal-mr-play.jpg",
       "categoria": "Lubricantes",
       "estado": "reserva"
+    },
+    {
+      "nombre": "Lubricante Comestible Chocolub",
+      "descripcion": "tEl lubricante mas rico que podras encontrar, disfruta de su agradable sabor a chocolate dulce , ideal para el sexo oral y vaginal o anal.",
+      "precio": "$1.000",
+      "imagen": "https://www.starsex.cl/cdn/shop/products/starsex-cosmetica-lubricante-comestible-chocolub-18634799120534_2000x.jpg?v=1628364441",
+      "categoria": "Lubricantes",
+      "estado": "disponible"
+    },
+    {
+      "nombre": "Lubricante Comestible ICE",
+      "descripcion": "Sachet Lubricante Ice, te pone los pelos de punta entregándote mayor placer y locura.",
+      "precio": "$1.000",
+      "imagen": "https://www.starsex.cl/cdn/shop/products/starsex-cosmetica-sachet-lubricante-ice-28939407622333.jpg?v=1628376853",
+      "categoria": "Lubricantes",
+      "estado": "disponible"
+    },{
+      "nombre": "Lubricante Comestible Frutilla",
+      "descripcion": "Intensifica más la experiencia masajeando con el lubricante para que sientas el intenso calor penetrando toda tu piel.",
+      "precio": "$1.000",
+      "imagen": "https://www.starsex.cl/cdn/shop/products/starsex-cosmetica-sachet-4-en-1-frutilub-5-ml-36235269570793_2000x.jpg?v=1638481123",
+      "categoria": "Lubricantes",
+      "estado": "disponible"
+    },
+    {
+      "nombre": "Lubricante Anal",
+      "descripcion": "Lubricante Anal Dilatador es ideal para juegos eróticos y penetraciones anales. ",
+      "precio": "$1.000",
+      "imagen": "https://www.starsex.cl/cdn/shop/products/starsex-cosmetica-lubricante-anal-dilatador-29858666840253.jpg?v=1650391530",
+      "categoria": "Lubricantes",
+      "estado": "disponible"
+    },
+    {
+      "nombre": "Gel Comestible Pie de limon",
+      "descripcion": "Geles Comestibles Erotic, con efecto calor y 100% libres de azúcar, de exquisito aroma y sabor, entrega a tu pareja el mejor sexo oral de la vida y logra una noche inolvidable, se puede retirar fácilmente con agua tibia y jabón neutro ",
+      "precio": "$1.000",
+      "imagen": "https://www.starsex.cl/cdn/shop/products/starsex-cosmetica-gel-comestible-erotic-30-ml-18634791780502_2000x.jpg?v=1630339558",
+      "categoria": "Gel",
+      "estado": "disponible"
+    },
+    {
+      "nombre": "Gel Comestible Uva",
+      "descripcion": "Geles Comestibles Erotic, con efecto calor y 100% libres de azúcar, de exquisito aroma y sabor, entrega a tu pareja el mejor sexo oral de la vida y logra una noche inolvidable, se puede retirar fácilmente con agua tibia y jabón neutro ",
+      "precio": "$1.000",
+      "imagen": "https://www.starsex.cl/cdn/shop/products/starsex-cosmetica-gel-comestible-erotic-30-ml-30134840787133_2000x.jpg?v=1630339740",
+      "categoria": "Gel",
+      "estado": "disponible"
+    },
+    {
+      "nombre": "Gel Comestible Menta-Chocolate",
+      "descripcion": "Geles Comestibles Erotic, con efecto calor y 100% libres de azúcar, de exquisito aroma y sabor, entrega a tu pareja el mejor sexo oral de la vida y logra una noche inolvidable, se puede retirar fácilmente con agua tibia y jabón neutro ",
+      "precio": "$1.000",
+      "imagen": "https://www.starsex.cl/cdn/shop/products/starsex-cosmetica-gel-comestible-erotic-30-ml-18634791714966_2000x.jpg?v=1630339392",
+      "categoria": "Gel",
+      "estado": "disponible"
+    },
+    {
+      "nombre": "ESTIMULANTE FEMENINO PEQUEÑA LOCURA",
+      "descripcion": "posee un agradable efecto vasodilatador que dejara tu clítoris más sensible al roce y así podrás llegar al ansiado orgasmo y tener encuentros más ardientes, mientras disfrutas de su agradable sabor a menta y efecto vibración suave.",
+      "precio": "$6.000",
+      "imagen": "https://www.starsex.cl/cdn/shop/files/intt-estimulante-femenino-pequena-locura-40823664574697_2000x.png?v=1683219901",
+      "categoria": "Gel",
+      "estado": "disponible"
     }
+
   ]
   
 }
